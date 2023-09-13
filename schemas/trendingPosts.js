@@ -1,13 +1,13 @@
 export default {
-  title: 'TendingPosts',
-  name: 'trendingPosts',
+  name: 'trendingPost',
   type: 'document',
+  title: 'Trending Post',
   fields: [
     {
       name: 'post',
-      title: 'Post',
-      type: 'reference', // Change type to reference
-      to: [{type: 'post'}], // Replace 'category' with the actual name of the 'Category' schema
+      type: 'reference',
+      title: 'Referenced Post',
+      to: [{type: 'post'}], // This defines that the reference is to the "post" schema
     },
   ],
 }
