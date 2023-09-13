@@ -1,4 +1,4 @@
-export default podcast = {
+export default {
   title: 'Podcast',
   name: 'podcast',
   type: 'document',
@@ -19,12 +19,6 @@ export default podcast = {
       type: 'string',
     },
     {
-      name: 'audio',
-      title: 'Audio',
-      type: 'file',
-      options: {accept: 'audio/*'},
-    },
-    {
       name: 'category',
       title: 'Category',
       type: 'reference', // Change type to reference
@@ -35,6 +29,12 @@ export default podcast = {
       title: 'Author',
       type: 'reference', // Change type to reference
       to: [{type: 'author'}], // Replace 'author' with the actual name of the 'Author' schema
+    },
+    {
+      name: 'audio',
+      title: 'Audio',
+      type: 'file',
+      options: {accept: 'audio/*'},
     },
   ],
 }
